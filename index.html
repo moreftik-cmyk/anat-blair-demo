@@ -239,7 +239,7 @@ function seed(){
  persist();return S;
 }
 
-function groupText(l,again){enrichSummary(l);return (again?'🔁 שוב פנוי\n':'')+'פנייה חדשה לטיפול ביתי\n📍 יישוב: '+l.city+'\n🩺 תחום: '+l.type+'\n🎯 צורך: '+l.rehabReason+'\n👤 גיל: '+l.ageGroup+'\n🚶 מצב תפקודי: '+l.functionalStatus+'\n🏠 נגישות הבית: '+l.homeAccess+'\n⏱️ דחיפות: '+l.urgency+(l.availability?'\n🕒 זמינות: '+l.availability:'')+(l.prefs&&l.prefs.length?'\nהעדפות: '+l.prefs.join(', '):'')+'\n\nאני מעוניין/ת: https://wa.me/972500000000?text='+encodeURIComponent('אני מעוניין/ת בפנייה '+l.id)+'\nפנייה '+l.id;}
+function groupText(l,again){enrichSummary(l);return (again?'🔁 שוב פנוי\n':'')+'פנייה חדשה לטיפול ביתי\n📍 יישוב: '+l.city+'\n🩺 תחום: '+l.type+'\n🎯 צורך: '+l.rehabReason+'\n👤 גיל: '+l.ageGroup+'\n🚶 מצב תפקודי: '+l.functionalStatus+'\n🏠 נגישות הבית: '+l.homeAccess+'\n⏱️ דחיפות: '+l.urgency+(l.availability?'\n🕒 זמינות: '+l.availability:'')+(l.prefs&&l.prefs.length?'\nהעדפות: '+l.prefs.join(', '):'')+'\n\nאני מעוניין/ת: https://wa.me/972500000000?text='+l.id+'\nפנייה '+l.id;}
 function brandText(l){return 'שלום'+(l.patient?' '+l.patient:'')+', כאן שיקום ביתי – ענת בלייר 🌿 המטפל/ת שנבחר/ה לפנייתך יצר/ה איתך קשר. אנחנו כאן כדי לוודא שהתהליך מתקדם בצורה מסודרת; אם יש שאלה אפשר להשיב להודעה הזו.';}
 
 function intake(text,src,files){
