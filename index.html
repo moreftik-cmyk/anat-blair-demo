@@ -1,4 +1,4 @@
-<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f6f2ea"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>דמו – ענת בלייר שיקום ביתי</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <style>
@@ -88,14 +88,18 @@ aside:after{content:"";position:absolute;inset:0;border-radius:24px;z-index:-1;b
 .dots span{display:inline-block;width:6px;height:6px;margin:0 2px;border-radius:50%;background:#a5b4fc;animation:dot 1s infinite}.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}@keyframes dot{50%{transform:translateY(-5px);opacity:.4}}
 .ain{padding:10px;border-top:1px solid rgba(255,255,255,.08);display:flex;gap:6px}.ain input{flex:1;background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:#fff;border-radius:999px;padding:9px 14px}.ain input::placeholder{color:#7d89a3}
 .toast{position:fixed;bottom:18px;left:18px;background:linear-gradient(120deg,#0f172a,#312e81);color:#fff;padding:11px 16px;border-radius:14px;opacity:0;transform:translateY(10px);transition:.35s;z-index:30;max-width:380px;box-shadow:0 12px 30px rgba(20,20,60,.35)}.toast.on{opacity:1;transform:none}
+.agent-close,#agentFab{display:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 @media(max-width:620px){
- header{position:static;padding:10px 12px;align-items:flex-start}.brand{width:100%}.clock{width:100%;border-radius:16px;overflow-x:auto;flex-wrap:nowrap}.clock button{white-space:nowrap}
- nav{padding:8px 12px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}nav button{white-space:nowrap;flex:0 0 auto}
- .wrap{padding:4px 10px 14px}.card{padding:13px;border-radius:16px}.hero{padding:15px}.hero h2{font-size:19px}.flow{height:112px}
- .row{align-items:stretch}.row>input,.row>select{min-width:0;max-width:100%}.btn{min-height:38px}table{min-width:620px}.card{overflow-x:auto}
- aside{border-radius:18px}.phone{max-height:none}.toast{right:10px;left:10px;max-width:none}
+ html{scroll-padding-bottom:92px}body{font-size:15px;padding-bottom:calc(78px + env(safe-area-inset-bottom))}
+ header{position:sticky;top:0;padding:9px 12px;align-items:center;box-shadow:0 5px 18px rgba(30,40,70,.07)}.brand{width:100%}.logo{width:38px;height:38px;border-radius:13px}.brand b{font-size:16px}.brand small{font-size:10.5px;line-height:1.3;max-width:270px}.clock{display:none}
+ nav{position:fixed;z-index:50;right:0;left:0;bottom:0;height:calc(70px + env(safe-area-inset-bottom));padding:7px 8px env(safe-area-inset-bottom);display:flex;flex-wrap:nowrap;gap:3px;overflow-x:auto;scrollbar-width:none;background:rgba(255,255,255,.94);border-top:1px solid rgba(30,40,70,.1);box-shadow:0 -8px 28px rgba(30,40,70,.12);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}nav::-webkit-scrollbar{display:none}body.dark nav{background:rgba(10,15,30,.94)}nav button{height:56px;min-width:76px;flex:1 0 76px;padding:6px 5px;border:0;border-radius:15px;background:transparent;box-shadow:none;font-size:11.5px;white-space:normal;line-height:1.2}nav button.on{box-shadow:none;background:linear-gradient(145deg,rgba(20,184,166,.16),rgba(99,102,241,.18));color:var(--indigo);font-weight:800}
+ .wrap{display:block;padding:10px 10px 18px}.wrap main{width:100%}.card{padding:14px;border-radius:18px;margin-bottom:12px;overflow-x:auto}.hero{padding:16px}.hero h2{font-size:20px}.flow{height:112px}
+ h2{font-size:18px}.referrals-head h1{font-size:24px}.referral-section{padding:14px;border-radius:19px}.referral-section-head h2{font-size:18px}.referral-row{padding:14px;border-radius:17px;gap:9px}.referral-row-main b{font-size:17px}.referral-row .btn{width:100%;display:grid;place-items:center}.group-track-title{align-items:flex-start}.group-track-title .btn{width:auto}.referral-agent-card{padding:14px;border-radius:18px}.lead-full-card{padding:15px;border-radius:20px}.lead-full-head h2{font-size:19px}.lead-full-message{padding:12px;font-size:14px}.lead-info-grid{grid-template-columns:1fr 1fr}.lead-info-tile{min-height:104px}
+ .anat-intake-grid{gap:10px}.anat-intake-grid label{display:grid;gap:5px;font-weight:700}.anat-intake-grid input,.anat-intake-grid textarea,.anat-intake-grid select{width:100%;font-size:16px;padding:11px 12px}.consent-row{display:flex;align-items:flex-start;gap:8px;line-height:1.45}.consent-row input{width:20px;height:20px;flex:0 0 20px}.row{align-items:stretch}.row>input,.row>select{min-width:0;max-width:100%}.btn{min-height:44px;padding:10px 14px;font-size:14px}.referrals-head .btn,.referral-agent-actions .btn,.referral-agent-actions label{width:100%}.referral-agent-actions select{font-size:16px;min-height:44px}table{min-width:620px}
+ aside{display:none;position:fixed;z-index:70;right:8px;left:8px;bottom:calc(78px + env(safe-area-inset-bottom));width:auto;max-height:72vh;border-radius:22px;box-shadow:0 24px 70px rgba(10,15,30,.45)}body.agent-open aside{display:flex}.agent-close{display:grid!important;margin-right:auto}#agentFab{display:grid;place-items:center;position:fixed;z-index:60;left:14px;bottom:calc(82px + env(safe-area-inset-bottom));width:54px;height:54px;border:0;border-radius:18px;background:var(--grad);color:#fff;font-size:24px;box-shadow:0 12px 28px rgba(99,102,241,.38)}body.agent-open #agentFab{background:linear-gradient(120deg,#f43f5e,#f97316)}.physio-mode #agentFab{display:none}
+ .phone{max-height:none}.toast{right:10px;left:10px;bottom:calc(82px + env(safe-area-inset-bottom));max-width:none}.portal-main-title{font-size:24px}.physio-flow-board h1{font-size:23px}
 }
 
 button.ev{width:100%;text-align:right;font:inherit;color:var(--ink);cursor:pointer;border-top:0;border-bottom:0;border-left:0}button.ev:hover{filter:brightness(.95)}button.ev:focus-visible{outline:2px solid var(--indigo)}
@@ -106,8 +110,9 @@ dialog{width:min(540px,94vw);border:1px solid var(--line);border-radius:20px;pad
 <div class="clock">🕒 <span id="now"></span><button onclick="adv(1)">+שעה</button><button onclick="adv(24)">+יום</button><button onclick="adv(168)">+שבוע</button><button onclick="document.body.classList.toggle('dark');try{localStorage.setItem('anat-theme',document.body.classList.contains('dark')?'dark':'')}catch(e){}">🌗 מצב לילה</button><button onclick="if(confirm('לאפס את הדמו?')){CORE.reset();R();toast('הדמו אופס')}">איפוס</button></div></header>
 <nav id="nav"></nav>
 <div class="wrap"><main id="main"></main>
-<aside><div class="ahead"><div class="orb"></div><div><b>הסוכן של ענת</b><small>שואלים בעברית · עונה רק מתוך הנתונים</small></div><span class="live">מחובר לנתונים</span></div>
+<aside><div class="ahead"><div class="orb"></div><div><b>הסוכן של ענת</b><small>שואלים בעברית · עונה רק מתוך הנתונים</small></div><span class="live">מחובר לנתונים</span><button class="agent-close" type="button" aria-label="סגירת הסוכן" onclick="toggleAgent(false)">✕</button></div>
 <div id="chat"></div><div class="ain"><input id="qin" placeholder="למשל: מי עוד לא שילם?" onkeydown="if(event.key==='Enter')askQ()"><button class="btn" onclick="askQ()">שאלי</button></div></aside></div>
+<button id="agentFab" type="button" aria-label="פתיחת הסוכן של ענת" onclick="toggleAgent()">✦</button>
 <div class="toast" id="toast"></div><dialog id="apptDetails" aria-labelledby="apptTitle"></dialog>
 <script>(function(G){
 'use strict';
@@ -470,6 +475,7 @@ function toast(t){var x=document.getElementById('toast');x.textContent=t;x.class
 function res(r,ok){if(r&&r.ok===false){toast('⚠️ '+(r.error||'לא ניתן'));}else if(ok)toast(ok);R();}
 function adv(h){var before=S().msgs.length;C.advance(h);R();var n=S().msgs.length-before;toast('⏩ עברו '+(h>=24?h/24+' ימים':h+' שעות')+(n?' · המערכת שלחה '+n+' הודעות אוטומטיות':''));}
 function go(t,extra){tab=t;if(extra)for(var k in extra)window[k]=extra[k];R();scrollTo(0,0);}
+function toggleAgent(force){var open=typeof force==='boolean'?force:!document.body.classList.contains('agent-open');document.body.classList.toggle('agent-open',open);var b=document.getElementById('agentFab');if(b){b.textContent=open?'✕':'✦';b.setAttribute('aria-label',open?'סגירת הסוכן של ענת':'פתיחת הסוכן של ענת');}}
 function stCls(s){return {new:'y',ready:'y',published:'y',awaiting_patient:'y',assigned_review:'y',awaiting_details:'y',connected:'y',contacted:'y',scheduled:'y',in_treatment:'g',done:'g',not_matured:'r',returned:'r',closed:'g'}[s]||'y';}
 function badge(l){return '<span class="st '+(l.red?'r':stCls(l.status))+'">'+C.STATUS[l.status]+(l.red?' 🔴':'')+'</span>';}
 function tbl(h,rows){return '<table><tr>'+h.map(function(x){return '<th>'+x+'</th>'}).join('')+'</tr>'+rows.map(function(r){return '<tr>'+r.map(function(c){return '<td>'+c+'</td>'}).join('')+'</tr>'}).join('')+'</table>';}
